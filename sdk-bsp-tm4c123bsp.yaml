@@ -67,6 +67,7 @@ template_projects:
     - figures
     - Kconfig
     - libraries
+    - makefile.targets
     - README.md
     - rtconfig.h
     - rtconfig.py
