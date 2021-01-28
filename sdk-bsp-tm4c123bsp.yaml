@@ -1,0 +1,98 @@
+board:
+  buy_url_cn: https://www.ti.com/tool/EK-TM4C123GXL?DCMP=stellaris-launchpad&HQS=tm4c123g-launchpad
+  buy_url_global: https://www.ti.com/tool/EK-TM4C123GXL?DCMP=stellaris-launchpad&HQS=tm4c123g-launchpad
+  debug_interface: SWD
+  debugger: JLINK
+  description_en: TiVa TM4C123G Development Kit is an evaluation platform for the TiVa TM4C123GH6PM based ARM Cortex-M4 family of microcontrollers.This development board features the TM4C123GH6PGE microcontroller's USB 2.0 OTG/ Host/Device (OTG/ Host/Device) interface, 12-bit mode converter (ADC), real-time clock (RTC) and battery-powered sleep module.
+  description_zh: Tiva TM4C123G 开发套件是一款针对 Tiva TM4C123GH6PM 基于 ARM Cortex-M4 的系列微控制器的评估平台。 此开发板突出了 TM4C123GH6PM 微控制器的 USB 2.0 OTG/主机/设备（OTG/主机/设备）接口，12 位模式转换器 (ADC)，实时时钟 (RTC) 和电池供电的休眠模块。
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: TM4C123G-TI-LAUNCHPAD
+  price_cn: 90.93 CNY
+  price_global: 12.99 USD
+  sale_contact_cn: https://www.ti.com/tool/EK-TM4C123GXL?DCMP=stellaris-launchpad&HQS=tm4c123g-launchpad
+  sale_contact_global: https://www.ti.com/tool/EK-TM4C123GXL?DCMP=stellaris-launchpad&HQS=tm4c123g-launchpad
+  small_image: documents/images/board_small.png
+  vendor: TI
+  version: Rev.A
+chip:
+  chip_name: TM4C123GH6PM
+  clock_source: HSE
+  device_vendor: TI
+  family_name: TM4
+  rx_name: PA0
+  series_name: TM4C
+  source_freq: '8000000'
+  sub_series_name: TM4C123GH6
+  target_freq: '80000000'
+  tx_name: PA1
+  uart_name: UART0
+docs:
+- category: manual
+  file: documents/manuals/user_manual.pdf
+  title: TM4C123G LaunchPad Evaluation Kit Manual
+- category: sheet
+  file: documents/sheet/datasheet.pdf
+  title: TM4C123GH6PM Datasheet
+example_projects: []
+features:
+  - Tiva C Series TM4C123GH6 
+  - USB Micro-AB connector
+  - RGB user LED
+  - Two user switches (application/wake)
+  - On-board In-Circuit Debug Interface (ICDI)
+  - Reset switch
+  - Preloaded RGB quickstart application
+features_zh:
+  - Tiva C Series TM4C123GH6 
+  - USB Micro-AB 连接器
+  - RGB LED 灯
+  - 两个按键 (application/wake)
+  - 板载在线调试接口(ICDI)
+  - 复位按键
+  - 出厂烧录的 RGB 快速入门应用程序
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: rtt_default_project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
